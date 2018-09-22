@@ -1,0 +1,46 @@
+WARNING - 09:37:27: First conversion pass
+WARNING - 09:37:28: Second pass : generating package usages
+WARNING - 09:37:28: Saving .uml resource: 20170727_093728
+WARNING - 09:37:28: Finished saving .uml resource: 20170727_093728
+ERROR - 09:37:29: Multiple exceptions
+----- exceptions : ----------
+unknown : No service found under key 'org.eclipse.papyrus.infra.core.services.EditorLifecycleManager'
+unknown : No service found under key 'org.eclipse.papyrus.infra.core.editor.IMultiDiagramEditor'
+unknown : No service found under key 'org.eclipse.papyrus.infra.core.editor.IMultiDiagramEditor'
+unknown : No service found under key 'org.eclipse.papyrus.infra.core.services.EditorLifecycleManager'
+org.eclipse.papyrus.infra.core.lifecycleevents.ISaveAndDirtyService : No service registered under 'interface org.eclipse.papyrus.infra.core.editor.IMultiDiagramEditor'
+org.eclipse.papyrus.infra.core.lifecycleevents.ISaveAndDirtyService : Bad state for service 'org.eclipse.papyrus.infra.core.lifecycleevents.ISaveAndDirtyService'. Expected 'initialized' found 'error'.
+----------------------------- 
+
+WARNING - 09:37:29: Creating class diagrams
+WARNING - 09:37:29: Creating activity diagrams
+WARNING - 09:37:29:    class diagram for packageImports
+WARNING - 09:37:29: Saving .notation resource
+WARNING - 09:37:29: Finished saving .notation resource
+WARNING - 09:37:29: Saving .di resource
+WARNING - 09:37:29: Finished saving .di resource
+WARNING - 09:37:30:    class diagram for figures
+WARNING - 09:37:30:    class diagram for dk
+WARNING - 09:37:30:    class diagram for itu
+WARNING - 09:37:30:    class diagram for bigm
+WARNING - 09:37:30:    class diagram for editors
+WARNING - 09:37:30:    class diagram for bigraph
+WARNING - 09:37:30:    class diagram for figures
+WARNING - 09:37:30:    class diagram for assistants
+WARNING - 09:37:31:    class diagram for utilities
+WARNING - 09:37:31:    class diagram for ui
+WARNING - 09:37:31:    class diagram for model
+WARNING - 09:37:31:    class diagram for LinkStyleUtilities
+WARNING - 09:37:31:    class diagram for org
+WARNING - 09:37:31:    class diagram for eclipse
+WARNING - 09:37:31:    class diagram for draw2d
+WARNING - 09:37:31:    class diagram for geometry
+WARNING - 09:37:31:    class diagram for swt
+WARNING - 09:37:31:    class diagram for graphics
+WARNING - 09:37:31:    class diagram for java
+WARNING - 09:37:31:    class diagram for lang
+WARNING - 09:39:13: Convert dk.itu.bigm.editors.bigraph.figures
+WARNING - 09:39:13: First conversion pass
+WARNING - 09:39:13: Second pass : generating package usages
+WARNING - 09:39:13: Saving uml file /resource/BigM/src/dk/itu/bigm/editors/bigraph/figures/figures.uml
+WARNING - 09:39:13: Uml file /resource/BigM/src/dk/itu/bigm/editors/bigraph/figures/figures.uml saved

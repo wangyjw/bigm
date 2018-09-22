@@ -1,0 +1,154 @@
+//##############################################################################
+// FILE: package.html
+// CONTENTS: general description of JLtl2ba
+//##############################################################################
+
+/* Copyright (C) 2002-2005 Contributors.
+ * 
+ * This file belongs to the Java interface for LTL2BA (JLtl2ba).
+ * 
+ * JLtl2ba is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2, or (at your option)
+ * any later version.
+ * 
+ * JLtl2ba is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with JLtl2ba; see the file COPYING.  If not, write to
+ * the Free Software Foundation, 59 Temple Place - Suite 330,
+ * Boston, MA 02111-1307, USA.  
+ */
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Java Interface for LTL2BA - Version 0.2.0</title>
+  </head>
+
+  <body>
+
+    <p>
+      This package provides a Java interface for LTL2BA, 
+      a highly optimising
+      LTL-to-B&uuml;chi transformer by Paul Gastin and Dennis Oddoux. 
+      See also 
+      [<a href="http://www.springerlink.com/openurl.asp?genre=article&issn=0302-9743&volume=2102&spage=53">P. Gastin 
+      and D. Oddoux. Fast LTL to B&uuml;chi Automata Translation.
+      In Computer-Aided Verification, LNCS 2102, pp. 53-65. Springer-Verlag, 2001.
+      Proceedings CAV '01 conference.</a>].
+
+    <p>
+      I wrote the original version of
+      JLtl2ba since 
+      LTL2BA is written in C.
+      To learn about using JLtl2ba, start with
+      the documentation of the classes {@link jltl2ba.HighLevel HighLevel} and
+      {@link jltl2ba.LowLevel LowLevel} and follow the pointer chains starting there.
+      The fully qualified package name is <code>jltl2ba</code>, plain and simple.
+      
+    <p>
+      The currently available distribution of JLtl2ba is a fully-built development snapshot.
+      Complete
+      copying, build and installation instructions
+      will be included in the regular distribution. 
+
+    <p>
+      Another Java interface for LTL2BA is <a href="http://www-i2.informatik.rwth-aachen.de/~bodden/ltl2ba4j">LTL2BA4J</a>. 
+      Pending any misunderstanding
+      of LTL2BA4J on my part,
+      the difference between JLtl2ba and LTL2BA4J is that JLtl2ba parses the output
+      of LTL2BA whereas LTL2BA4J takes direct access to LTL2BA's internal
+      data structures. The tradeoff is that JLtl2ba should be more independent of any
+      future changes to LTL2BA whereas LTL2BA4J is faster. Also, if you incorporate JLtl2ba in any Java software
+      of yours then that in and of itself will not force you to work with the Java native interface.
+ 
+    <h2>Homepage</h2>
+
+    <p>
+      <a href="http://www.lcb.uu.se/~michaelb/software/jltl2ba">http://www.lcb.uu.se/~michaelb/software/jltl2ba</a>
+
+    <h2>Download</h2>
+
+    <p>
+      V. 0.1.1-1: <a href="http://www.lcb.uu.se/~michaelb/software/jltl2ba/jltl2ba-0.1.1-1.tar.bz2">http://www.lcb.uu.se/~michaelb/software/jltl2ba/jltl2ba-0.1.1-1.tar.bz2</a> (bzipped tar file)
+
+    <h2>LTL2BA Homepage Including Download</h2>
+
+    <p>
+      <a href="http://www.liafa.jussieu.fr/~oddoux/ltl2ba">http://www.liafa.jussieu.fr/~oddoux/ltl2ba</a>
+
+    <h2>What's New</h2>
+
+    <ul>
+    <li>
+      V. 0.1.1-1:
+      <ul>
+      <li>
+        Minor documentation and license updates.
+      </ul>
+    <li>
+      V. 0.1.1:
+      <ul>
+      <li>
+        Thanks to a patch provided by Matt Hoosier,
+        there is no need for any native library anymore. 
+      </ul>
+    <li>
+      V. 0.1.0:
+      <ul>
+      <li>
+        Created the first release of JLtl2ba by renaming the last
+        release of Ltl2baIF. The new name sounds better and, at the same time,
+        it is more in line with standard practice to tag such a new tool
+        with a major number of 0.
+      </ul>
+    </ul>
+
+    <h2>Ltl2baIF History</h2>
+
+    <ul>
+    <li> V. 1.1 beta:
+      <ul>
+      <li> Added <code>Highlevel</code>, a high-level interface class based on abstract input syntax and callbacks.
+      <li> Accordingly, the low-level interface class is now called <code>LowLevel</code>. - Its former name was
+           <code>BasicLtlt2baIF</code>.
+      <li> The package name has turned out not to be so final as announced earlier, as it has been shortened to <code>JLtl2ba</code>. 
+      <li> Modifications to the makefile.
+      <li> Improved and extended documentation.
+      <li> Inclusion of a demo program for the high-level interface.
+      </ul>
+    <li> V. 1.0.1-1 beta: documentation updates
+    <li> V. 1.0.1 beta: final package name, documentation updates
+    </ul>        
+
+    <h2>Authorship</h2>
+
+    <p>
+      Copyright (&copy;) 2002-2005 Contributors.
+    
+    <p>
+      The Java interface for LTL2BA (JLtl2ba) is free software; you can redistribute it and/or modify
+      it under the terms of the GNU General Public License as published by
+      the Free Software Foundation; either version 2, or (at your option)
+      any later version.
+  
+    <p>
+      JLtl2ba is distributed in the hope that it will be useful,
+      but WITHOUT ANY WARRANTY; without even the implied warranty of
+      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+      GNU General Public License for more details.
+  
+    <p>
+      A copy of the GNU General Public License comes 
+      along with JLtl2ba; see the file COPYING.  If it is missing, write to
+      the Free Software Foundation, 59 Temple Place - Suite 330,
+      Boston, MA 02111-1307, USA.  
+
+    <p>
+      Michael Baldamus, Uppsala, July 2005
+   </body>
+</html

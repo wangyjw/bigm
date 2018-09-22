@@ -1,0 +1,14 @@
+# RQM test project name
+projectName =DRC Training Project (Quality Management)
+
+# RQM system user
+userName = clmadmin
+
+# RQM system user's password
+password = Delta123
+
+# RQM server ip
+serverIP = 192.168.34.12
+
+# RQM server port
+serverPort = 9443

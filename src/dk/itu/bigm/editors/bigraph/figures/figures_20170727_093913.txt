@@ -1,0 +1,4 @@
+WARNING - 09:39:13: First conversion pass
+WARNING - 09:39:13: Second pass : generating package usages
+WARNING - 09:39:13: Saving uml file /resource/BigM/src/dk/itu/bigm/editors/bigraph/figures/figures.uml
+WARNING - 09:39:13: Uml file /resource/BigM/src/dk/itu/bigm/editors/bigraph/figures/figures.uml saved

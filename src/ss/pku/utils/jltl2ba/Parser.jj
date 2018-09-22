@@ -1,0 +1,267 @@
+//##############################################################################
+// FILE: Parser.jj
+// CONTENTS: class Parser
+//##############################################################################
+
+/* Copyright (C) 2002-2005 Contributors.
+ * 
+ * This file belongs to the Java interface for LTL2BA (JLtl2ba).
+ * 
+ * JLtl2ba is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2, or (at your option)
+ * any later version.
+ * 
+ * JLtl2ba is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with JLtl2ba; see the file COPYING.  If not, write to
+ * the Free Software Foundation, 59 Temple Place - Suite 330,
+ * Boston, MA 02111-1307, USA.  
+ */
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Preamble
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+options 
+{ 
+    STATIC = false; 
+}
+
+PARSER_BEGIN(Parser)
+
+package jltl2ba;
+
+import java.io.*;
+
+class Parser
+{
+    // no extra code
+}
+
+PARSER_END(Parser)
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Lexical Analysis
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+//==============================================================================
+// White Space 
+//==============================================================================
+
+SKIP :
+{
+  " "
+| "\t"
+| "\n"
+| "\r"
+| "\f"
+}
+
+//==============================================================================
+// Comments
+//==============================================================================
+
+MORE :
+{
+  "/*" : IN_COMMENT
+}
+
+<IN_COMMENT>
+SPECIAL_TOKEN :
+{
+  < COMMENT: "*/" > : DEFAULT
+}
+
+<IN_COMMENT>
+MORE :
+{
+  < ~[] >
+}
+
+//============================================================================
+// Reserved Tokens
+//============================================================================
+
+TOKEN :
+{
+  < ACCEPT_ALL : "accept_all" > 
+| < ACCEPT_INIT : "accept_init" >
+| < FALSE : "false">
+| < FI : "fi" >
+| < GOTO : "goto" >
+| < IF : "if" > 
+| < NEVER : "never" >
+| < ZKIP : "skip" >
+}
+
+TOKEN :
+{ 
+  < LBRACE : "{" >
+| < RBRACE : "}" >
+| < LPARENTHESIS : "(" >
+| < RPARENTHESIS : ")" >
+| < COLON : ":" >
+| < CCOLON : "::" >
+| < SEMICOLON : ";" >
+| < ONE : "1" >
+| < ARROW : "->" >
+| < BBAR : "||" >
+| < AAMPERSAND : "&&" >
+| < BANG : "!" >
+}
+
+//==============================================================================
+// Identifiers
+//==============================================================================
+
+TOKEN :
+{ 
+  < ACCEPT_Sj : "accept_S" <INDEX> >
+| < Ti_Sj : "T" <INDEX> "_S" <INDEX> >
+| < Ti_INIT : "T" <INDEX> "_init" >
+| < ATOM_k : "atom_" <INDEX> >
+| < #INDEX : ("0"|"1"|"2"|"3"|"4"|"5"|"6"|"7"|"8"|"9")+ >
+}
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Syntactic Analysis
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+//==============================================================================
+// Never Claims
+//==============================================================================
+
+void
+neverClaim(HighLevel.Callback callback, HighLevel.CallersSubstitute.NeverClaim neverClaimSubstitute) :
+{}
+{ <NEVER> <LBRACE> (bundle(callback, neverClaimSubstitute))+ <RBRACE> <EOF> }
+
+//==============================================================================
+// State Specifications
+//==============================================================================
+
+void
+bundle(HighLevel.Callback callback, HighLevel.CallersSubstitute.NeverClaim neverClaimSubstitute) :
+{}
+{ { HighLevel.CallersSubstitute.Bundle bundleSubstitute;
+    HighLevel.CallersSubstitute.State sourceStateSubstitute; 
+  }
+  sourceStateSubstitute = state(callback) 
+  <COLON> 
+  ( <ZKIP> 
+    { bundleSubstitute 
+          = callback.newSkippingBundleSubstitute(sourceStateSubstitute); 
+    }
+  | <IF> 
+    { bundleSubstitute 
+          = callback.newBundleSubstitute(sourceStateSubstitute); 
+    } 
+    (transition(callback, (HighLevel.CallersSubstitute.Bundle.WithTransitions) bundleSubstitute))+ 
+    <FI> 
+    <SEMICOLON> 
+  | <FALSE>
+    { bundleSubstitute
+          = callback.newDeadEndBundleSubstitute(sourceStateSubstitute);
+    }
+  ) 
+  { neverClaimSubstitute.add(bundleSubstitute); } 
+}
+
+//==============================================================================
+// Transitions
+//==============================================================================
+
+void
+transition(HighLevel.Callback callback, HighLevel.CallersSubstitute.Bundle.WithTransitions bundleSubstitute) :
+{}
+{ { Object guardSubstitute;
+    HighLevel.CallersSubstitute.State targetStateSubstitute;
+  }
+  <CCOLON> 
+  guardSubstitute = guard(callback) <ARROW> <GOTO> targetStateSubstitute = state(callback) 
+  { bundleSubstitute.add(callback.newTransitionSubstitute(guardSubstitute, targetStateSubstitute)); } 
+}
+
+//==============================================================================
+// States
+//==============================================================================
+
+HighLevel.CallersSubstitute.State
+state(HighLevel.Callback callback) :
+{}
+{ ( <ACCEPT_ALL> 
+    { return callback.newStateAcceptAllSubstitute(getToken(0).image); }
+  | <ACCEPT_INIT> 
+    { return callback.newStateAcceptInitSubstitute(getToken(0).image); }
+  | <ACCEPT_Sj> 
+    { return callback.newStateAcceptSjSubstitute(getToken(0).image); }
+  | <Ti_Sj> 
+    { return callback.newStateTiSjSubstitute(getToken(0).image); }
+  | <Ti_INIT> 
+    { return callback.newStateTiInitSubstitute(getToken(0).image); }
+  ) 
+}
+
+//==============================================================================
+// Guards
+//==============================================================================
+
+HighLevel.CallersSubstitute.Guard
+guard(HighLevel.Callback callback) :
+{}
+{ { return guard0(callback); } }
+
+HighLevel.CallersSubstitute.Guard 
+guard0(HighLevel.Callback callback) :
+{}
+{ { HighLevel.CallersSubstitute.Guard arg1;
+    HighLevel.CallersSubstitute.Guard arg2;
+  }
+  arg1 = guard1(callback) 
+  [ <BBAR> arg2 = guard0(callback)
+    { return callback.newGuardDisjunctionSubstitute(arg1, arg2); } 
+  ] 
+  { return arg1; }
+}
+
+HighLevel.CallersSubstitute.Guard 
+guard1(HighLevel.Callback callback) :
+{}
+{ { HighLevel.CallersSubstitute.Guard arg1;
+    HighLevel.CallersSubstitute.Guard arg2;
+  }
+  arg1 = guard2(callback) 
+  [ <AAMPERSAND> arg2 = guard1(callback)
+    { return callback.newGuardConjunctionSubstitute(arg1, arg2); } 
+  ] 
+  { return arg1; }
+}
+
+HighLevel.CallersSubstitute.Guard
+guard2(HighLevel.Callback callback) :
+{}
+{ { HighLevel.CallersSubstitute.Guard arg; }
+  [ <BANG> arg = guard2(callback) 
+    { return callback.newGuardNegationSubstitute(arg); } 
+  ] 
+  arg = guard3(callback) 
+  { return arg; } 
+}
+
+HighLevel.CallersSubstitute.Guard
+guard3(HighLevel.Callback callback) :
+{}
+{ <ATOM_k> 
+  { return callback.newGuardAtomSubstitute(HighLevel.Input.toInputAtom(getToken(0).image)); } 
+| <ONE> 
+  { return callback.newGuardTruthhoodSubstitute(); }
+| { HighLevel.CallersSubstitute.Guard arg; }
+  <LPARENTHESIS> arg = guard(callback) <RPARENTHESIS> 
+  { return arg; }
+}
+

@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_ZMHa8HJsEeeZQN1ldLittQ" name="figures">
+  <elementImport xmi:id="_ZMX5onJsEeeZQN1ldLittQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_ZMZHwHJsEeeZQN1ldLittQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+  </elementImport>
+  <elementImport xmi:id="_ZMZHwXJsEeeZQN1ldLittQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+  </elementImport>
+  <elementImport xmi:id="_ZMZHwnJsEeeZQN1ldLittQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+  </elementImport>
+  <elementImport xmi:id="_ZMZHw3JsEeeZQN1ldLittQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+  </elementImport>
+  <elementImport xmi:id="_ZMZHxHJsEeeZQN1ldLittQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+  </elementImport>
+  <elementImport xmi:id="_ZMZHxXJsEeeZQN1ldLittQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+  </elementImport>
+  <elementImport xmi:id="_ZMZHxnJsEeeZQN1ldLittQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+  </elementImport>
+  <elementImport xmi:id="_ZMZHx3JsEeeZQN1ldLittQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_ZMZHyHJsEeeZQN1ldLittQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <elementImport xmi:id="_ZMZHyXJsEeeZQN1ldLittQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_ZMZHynJsEeeZQN1ldLittQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <packageImport xmi:id="_ZMX5oHJsEeeZQN1ldLittQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:id="_ZMX5oXJsEeeZQN1ldLittQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_ZMZHy3JsEeeZQN1ldLittQ" name="dk">
+    <packagedElement xmi:type="uml:Package" xmi:id="_ZMZHzHJsEeeZQN1ldLittQ" name="itu">
+      <packagedElement xmi:type="uml:Package" xmi:id="_ZMZHzXJsEeeZQN1ldLittQ" name="bigm">
+        <packagedElement xmi:type="uml:Package" xmi:id="_ZMZHznJsEeeZQN1ldLittQ" name="editors">
+          <packagedElement xmi:type="uml:Package" xmi:id="_ZMZHz3JsEeeZQN1ldLittQ" name="bigraph">
+            <packagedElement xmi:type="uml:Package" xmi:id="_ZMZH0HJsEeeZQN1ldLittQ" name="figures">
+              <packagedElement xmi:type="uml:Package" xmi:id="_ZNHggnJsEeeZQN1ldLittQ" name="assistants">
+                <packagedElement xmi:type="uml:DataType" xmi:id="_ZNHgg3JsEeeZQN1ldLittQ" name="SlightlyOvergenerousClippingStrategy"/>
+                <packagedElement xmi:type="uml:DataType" xmi:id="_ZQVzo3JsEeeZQN1ldLittQ" name="CurvyConnectionRouter"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_ZMZu0HJsEeeZQN1ldLittQ" name="BigraphFigure" visibility="public">
+                <elementImport xmi:id="_ZMeARHJsEeeZQN1ldLittQ" importedElement="_ZMeAQ3JsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZMenUnJsEeeZQN1ldLittQ" importedElement="_ZMenUXJsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZMenVXJsEeeZQN1ldLittQ" importedElement="_ZMenVHJsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZMfOYnJsEeeZQN1ldLittQ" importedElement="_ZMfOYXJsEeeZQN1ldLittQ" visibility="private"/>
+                <generalization xmi:id="_ZMdZMHJsEeeZQN1ldLittQ" general="_ZMZu0XJsEeeZQN1ldLittQ"/>
+                <ownedAttribute xmi:id="_ZMfOY3JsEeeZQN1ldLittQ" name="displayGuides" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZMf1cHJsEeeZQN1ldLittQ" name="" value="true">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                  </defaultValue>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_ZMgcgHJsEeeZQN1ldLittQ" name="upperRootBoundary" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZMgcgXJsEeeZQN1ldLittQ" name="" value="Integer.MIN_VALUE,&#xA;&#x9;            lowerOuterNameBoundary = Integer.MAX_VALUE,&#xA;&#x9;            upperInnerNameBoundary = Integer.MIN_VALUE,&#xA;&#x9;            lowerRootBoundary = Integer.MAX_VALUE">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </defaultValue>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_ZMgcgnJsEeeZQN1ldLittQ" name="lowerOuterNameBoundary" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZMgcg3JsEeeZQN1ldLittQ" name="" value="Integer.MIN_VALUE,&#xA;&#x9;            lowerOuterNameBoundary = Integer.MAX_VALUE,&#xA;&#x9;            upperInnerNameBoundary = Integer.MIN_VALUE,&#xA;&#x9;            lowerRootBoundary = Integer.MAX_VALUE">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </defaultValue>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_ZMhDkHJsEeeZQN1ldLittQ" name="upperInnerNameBoundary" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZMhDkXJsEeeZQN1ldLittQ" name="" value="Integer.MIN_VALUE,&#xA;&#x9;            lowerOuterNameBoundary = Integer.MAX_VALUE,&#xA;&#x9;            upperInnerNameBoundary = Integer.MIN_VALUE,&#xA;&#x9;            lowerRootBoundary = Integer.MAX_VALUE">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </defaultValue>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_ZMhDknJsEeeZQN1ldLittQ" name="lowerRootBoundary" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZMhDk3JsEeeZQN1ldLittQ" name="" value="Integer.MIN_VALUE,&#xA;&#x9;            lowerOuterNameBoundary = Integer.MAX_VALUE,&#xA;&#x9;            upperInnerNameBoundary = Integer.MIN_VALUE,&#xA;&#x9;            lowerRootBoundary = Integer.MAX_VALUE">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </defaultValue>
+                </ownedAttribute>
+                <ownedOperation xmi:id="_ZMkt8HJsEeeZQN1ldLittQ" name="setDisplayGuides" visibility="public">
+                  <ownedParameter xmi:id="_ZMkt8XJsEeeZQN1ldLittQ" name="displayGuides">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ZMrboHJsEeeZQN1ldLittQ" name="outlineShape" visibility="protected">
+                  <ownedParameter xmi:id="_ZMrboXJsEeeZQN1ldLittQ" name="g" type="_ZMeAQ3JsEeeZQN1ldLittQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ZMwUIHJsEeeZQN1ldLittQ" name="setUpperRootBoundary" visibility="public">
+                  <ownedParameter xmi:id="_ZMwUIXJsEeeZQN1ldLittQ" name="upperRootBoundary">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ZM1MoHJsEeeZQN1ldLittQ" name="setLowerOuterNameBoundary" visibility="public">
+                  <ownedParameter xmi:id="_ZM1MoXJsEeeZQN1ldLittQ" name="lowerOuterNameBoundary">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ZM6sMHJsEeeZQN1ldLittQ" name="setUpperInnerNameBoundary" visibility="public">
+                  <ownedParameter xmi:id="_ZM6sMXJsEeeZQN1ldLittQ" name="upperInnerNameBoundary">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ZM-WkHJsEeeZQN1ldLittQ" name="setLowerRootBoundary" visibility="public">
+                  <ownedParameter xmi:id="_ZM-WkXJsEeeZQN1ldLittQ" name="lowerRootBoundary">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_ZMZu0XJsEeeZQN1ldLittQ" name="AbstractFigure" visibility="public" isAbstract="true">
+                <elementImport xmi:id="_ZNFrUnJsEeeZQN1ldLittQ" importedElement="_ZMeAQ3JsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZNGSYXJsEeeZQN1ldLittQ" importedElement="_ZNGSYHJsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZNGSY3JsEeeZQN1ldLittQ" importedElement="_ZNGSYnJsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZNGSZXJsEeeZQN1ldLittQ" importedElement="_ZNGSZHJsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZNG5cXJsEeeZQN1ldLittQ" importedElement="_ZNG5cHJsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZNG5cnJsEeeZQN1ldLittQ" importedElement="_ZNFrUHJsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZNG5dHJsEeeZQN1ldLittQ" importedElement="_ZNG5c3JsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZNHggHJsEeeZQN1ldLittQ" importedElement="_ZMenUXJsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZNHggXJsEeeZQN1ldLittQ" importedElement="_ZMenVHJsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZNHghHJsEeeZQN1ldLittQ" importedElement="_ZNHgg3JsEeeZQN1ldLittQ" visibility="private"/>
+                <generalization xmi:id="_ZNFrUXJsEeeZQN1ldLittQ" general="_ZNFrUHJsEeeZQN1ldLittQ"/>
+                <ownedAttribute xmi:id="_ZNJVsHJsEeeZQN1ldLittQ" name="toolTip" visibility="private" type="_ZNGSYnJsEeeZQN1ldLittQ">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZNJVsXJsEeeZQN1ldLittQ" name="" type="_ZNGSYnJsEeeZQN1ldLittQ" value="null"/>
+                </ownedAttribute>
+                <ownedOperation xmi:id="_ZNNAEHJsEeeZQN1ldLittQ" name="AbstractFigure" visibility="public"/>
+                <ownedOperation xmi:id="_ZNU74HJsEeeZQN1ldLittQ" name="setConstraint" visibility="public">
+                  <ownedParameter xmi:id="_ZNU74XJsEeeZQN1ldLittQ" name="rect" type="_ZMenUXJsEeeZQN1ldLittQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ZNZ0YHJsEeeZQN1ldLittQ" name="getConstraint" visibility="public">
+                  <ownedParameter xmi:id="_ZNZ0YXJsEeeZQN1ldLittQ" type="_ZMenUXJsEeeZQN1ldLittQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ZNf7AHJsEeeZQN1ldLittQ" name="start" visibility="public">
+                  <eAnnotations xmi:id="_ZNf7AXJsEeeZQN1ldLittQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+                    <details xmi:id="_ZNf7AnJsEeeZQN1ldLittQ" key="documentation" value=" Pushes the state of the specified {@link Graphics}, translates its&#xD;&#xA; co-ordinates by the {@link #getLocation location} of this object, and&#xD;&#xA; returns the {@link Rectangle} in which this figure should be drawn.&#xD;&#xA; &lt;p>Remember to call {@link #stop} to restore the state of the Graphics.&#xD;&#xA; @param g a Graphics&#xD;&#xA; @return the region in which this figure should be drawn&#xD;&#xA;&#x9;"/>
+                  </eAnnotations>
+                  <ownedParameter xmi:id="_ZNf7A3JsEeeZQN1ldLittQ" name="g" type="_ZMeAQ3JsEeeZQN1ldLittQ"/>
+                  <ownedParameter xmi:id="_ZNf7BHJsEeeZQN1ldLittQ" type="_ZMenUXJsEeeZQN1ldLittQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ZNkzgHJsEeeZQN1ldLittQ" name="stop" visibility="public">
+                  <eAnnotations xmi:id="_ZNkzgXJsEeeZQN1ldLittQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+                    <details xmi:id="_ZNkzgnJsEeeZQN1ldLittQ" key="documentation" value=" Cleans up after an invocation of {@link #start}, popping the state of&#xD;&#xA; the specified {@link Graphics}.&#xD;&#xA; &lt;p>Although this is currently equivalent to &lt;code>g.popState()&lt;/code>,&#xD;&#xA; it's not guaranteed to remain that way - if &lt;code>start&lt;/code> acquires&#xD;&#xA; more functionality, then this method will clean up after that, too.&#xD;&#xA; @param g a Graphics&#xD;&#xA;&#x9;"/>
+                  </eAnnotations>
+                  <ownedParameter xmi:id="_ZNkzg3JsEeeZQN1ldLittQ" name="g" type="_ZMeAQ3JsEeeZQN1ldLittQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ZNqTEHJsEeeZQN1ldLittQ" name="fillShape" visibility="protected">
+                  <ownedParameter xmi:id="_ZNqTEXJsEeeZQN1ldLittQ" name="graphics" type="_ZMeAQ3JsEeeZQN1ldLittQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ZNxn0HJsEeeZQN1ldLittQ" name="outlineShape" visibility="protected">
+                  <ownedParameter xmi:id="_ZNxn0XJsEeeZQN1ldLittQ" name="graphics" type="_ZMeAQ3JsEeeZQN1ldLittQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ZN3HYHJsEeeZQN1ldLittQ" name="setToolTip" visibility="public">
+                  <ownedParameter xmi:id="_ZN3HYXJsEeeZQN1ldLittQ" name="content">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ZN_DMHJsEeeZQN1ldLittQ" name="createToolTipFor" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_ZN_DMXJsEeeZQN1ldLittQ" name="f" type="_ZNGSYHJsEeeZQN1ldLittQ"/>
+                  <ownedParameter xmi:id="_ZN_DMnJsEeeZQN1ldLittQ" type="_ZNGSYnJsEeeZQN1ldLittQ" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_ZMaV4HJsEeeZQN1ldLittQ" name="NameFigure" visibility="public">
+                <elementImport xmi:id="_ZOD7sXJsEeeZQN1ldLittQ" importedElement="_ZOD7sHJsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZOD7snJsEeeZQN1ldLittQ" importedElement="_ZMeAQ3JsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZOD7s3JsEeeZQN1ldLittQ" importedElement="_ZNGSYnJsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZOD7tXJsEeeZQN1ldLittQ" importedElement="_ZOD7tHJsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZOEiwHJsEeeZQN1ldLittQ" importedElement="_ZMenUXJsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZOEiwXJsEeeZQN1ldLittQ" importedElement="_ZMenVHJsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZOEixHJsEeeZQN1ldLittQ" importedElement="_ZOEiw3JsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZOEixXJsEeeZQN1ldLittQ" importedElement="_ZMfOYXJsEeeZQN1ldLittQ" visibility="private"/>
+                <generalization xmi:id="_ZODUoHJsEeeZQN1ldLittQ" general="_ZMZu0XJsEeeZQN1ldLittQ"/>
+                <ownedAttribute xmi:id="_ZOG_AHJsEeeZQN1ldLittQ" name="italicFont" visibility="private" isStatic="true" type="_ZOEiw3JsEeeZQN1ldLittQ">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZOG_AXJsEeeZQN1ldLittQ" name="" type="_ZOEiw3JsEeeZQN1ldLittQ" value="null"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_ZOJbQHJsEeeZQN1ldLittQ" name="label" visibility="private" type="_ZNGSYnJsEeeZQN1ldLittQ">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZOJbQXJsEeeZQN1ldLittQ" name="" type="_ZNGSYnJsEeeZQN1ldLittQ" value="new Label()"/>
+                </ownedAttribute>
+                <ownedOperation xmi:id="_ZOKpYHJsEeeZQN1ldLittQ" name="NameFigure" visibility="public"/>
+                <ownedOperation xmi:id="_ZOQI8HJsEeeZQN1ldLittQ" name="addNotify" visibility="public"/>
+                <ownedOperation xmi:id="_ZOVogHJsEeeZQN1ldLittQ" name="repositionLabel" visibility="private"/>
+                <ownedOperation xmi:id="_ZOcWMHJsEeeZQN1ldLittQ" name="setConstraint" visibility="public">
+                  <ownedParameter xmi:id="_ZOcWMXJsEeeZQN1ldLittQ" name="r" type="_ZMenUXJsEeeZQN1ldLittQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ZOic0HJsEeeZQN1ldLittQ" name="setName" visibility="public">
+                  <ownedParameter xmi:id="_ZOic0XJsEeeZQN1ldLittQ" name="s">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ZOq_sHJsEeeZQN1ldLittQ" name="fillShape" visibility="protected">
+                  <ownedParameter xmi:id="_ZOq_sXJsEeeZQN1ldLittQ" name="graphics" type="_ZMeAQ3JsEeeZQN1ldLittQ"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_ZMaV4XJsEeeZQN1ldLittQ" name="PortFigure" visibility="public">
+                <elementImport xmi:id="_ZOvRIXJsEeeZQN1ldLittQ" importedElement="_ZOD7sHJsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZOv4MHJsEeeZQN1ldLittQ" importedElement="_ZMeAQ3JsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZOv4MXJsEeeZQN1ldLittQ" importedElement="_ZNGSYnJsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZOv4MnJsEeeZQN1ldLittQ" importedElement="_ZMenUXJsEeeZQN1ldLittQ" visibility="private"/>
+                <generalization xmi:id="_ZOvRIHJsEeeZQN1ldLittQ" general="_ZMZu0XJsEeeZQN1ldLittQ"/>
+                <ownedAttribute xmi:id="_ZOxtYHJsEeeZQN1ldLittQ" name="portType" visibility="private" type="_ZNGSYnJsEeeZQN1ldLittQ">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZOyUcHJsEeeZQN1ldLittQ" name="" type="_ZNGSYnJsEeeZQN1ldLittQ" value="new Label()"/>
+                </ownedAttribute>
+                <ownedOperation xmi:id="_ZO1XwHJsEeeZQN1ldLittQ" name="SetLable" visibility="public">
+                  <ownedParameter xmi:id="_ZO1XwXJsEeeZQN1ldLittQ" name="text">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ZO5CIHJsEeeZQN1ldLittQ" name="PortFigure" visibility="public">
+                  <ownedParameter xmi:id="_ZO5CIXJsEeeZQN1ldLittQ" name="portTypeText">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ZO_IwHJsEeeZQN1ldLittQ" name="fillShape" visibility="protected">
+                  <ownedParameter xmi:id="_ZO_IwXJsEeeZQN1ldLittQ" name="graphics" type="_ZMeAQ3JsEeeZQN1ldLittQ"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_ZMaV4nJsEeeZQN1ldLittQ" name="RootFigure" visibility="public">
+                <elementImport xmi:id="_ZPGdgXJsEeeZQN1ldLittQ" importedElement="_ZOD7sHJsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZPGdgnJsEeeZQN1ldLittQ" importedElement="_ZMeAQ3JsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZPGdg3JsEeeZQN1ldLittQ" importedElement="_ZNGSYnJsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZPGdhHJsEeeZQN1ldLittQ" importedElement="_ZMenUXJsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZPGdhXJsEeeZQN1ldLittQ" importedElement="_ZMenVHJsEeeZQN1ldLittQ" visibility="private"/>
+                <generalization xmi:id="_ZPGdgHJsEeeZQN1ldLittQ" general="_ZMZu0XJsEeeZQN1ldLittQ"/>
+                <ownedAttribute xmi:id="_ZPISsHJsEeeZQN1ldLittQ" name="labelName" visibility="private" type="_ZNGSYnJsEeeZQN1ldLittQ">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZPISsXJsEeeZQN1ldLittQ" name="" type="_ZNGSYnJsEeeZQN1ldLittQ" value="new Label()"/>
+                </ownedAttribute>
+                <ownedOperation xmi:id="_ZPKH4HJsEeeZQN1ldLittQ" name="RootFigure" visibility="public"/>
+                <ownedOperation xmi:id="_ZPOZUHJsEeeZQN1ldLittQ" name="setName" visibility="public">
+                  <ownedParameter xmi:id="_ZPOZUXJsEeeZQN1ldLittQ" name="name">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ZPWVIHJsEeeZQN1ldLittQ" name="outlineShape" visibility="protected">
+                  <ownedParameter xmi:id="_ZPWVIXJsEeeZQN1ldLittQ" name="graphics" type="_ZMeAQ3JsEeeZQN1ldLittQ"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_ZMaV43JsEeeZQN1ldLittQ" name="EdgeFigure" visibility="public">
+                <elementImport xmi:id="_ZPamkXJsEeeZQN1ldLittQ" importedElement="_ZOD7sHJsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZPamknJsEeeZQN1ldLittQ" importedElement="_ZMeAQ3JsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZPamk3JsEeeZQN1ldLittQ" importedElement="_ZNGSYnJsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZPamlHJsEeeZQN1ldLittQ" importedElement="_ZOD7tHJsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZPbNoHJsEeeZQN1ldLittQ" importedElement="_ZMenUXJsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZPbNoXJsEeeZQN1ldLittQ" importedElement="_ZMenVHJsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZPbNo3JsEeeZQN1ldLittQ" importedElement="_ZPbNonJsEeeZQN1ldLittQ" visibility="private"/>
+                <generalization xmi:id="_ZPamkHJsEeeZQN1ldLittQ" general="_ZMZu0XJsEeeZQN1ldLittQ"/>
+                <ownedAttribute xmi:id="_ZPdC0HJsEeeZQN1ldLittQ" name="labelName" visibility="private" type="_ZNGSYnJsEeeZQN1ldLittQ">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZPdC0XJsEeeZQN1ldLittQ" name="" type="_ZNGSYnJsEeeZQN1ldLittQ" value="new Label()"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_ZPdp4HJsEeeZQN1ldLittQ" name="single" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZPdp4XJsEeeZQN1ldLittQ" name="" value="false">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                  </defaultValue>
+                </ownedAttribute>
+                <ownedOperation xmi:id="_ZPe4AHJsEeeZQN1ldLittQ" name="EdgeFigure" visibility="public"/>
+                <ownedOperation xmi:id="_ZPjJcHJsEeeZQN1ldLittQ" name="repositionLabel" visibility="private"/>
+                <ownedOperation xmi:id="_ZPqeMHJsEeeZQN1ldLittQ" name="setConstraint" visibility="public">
+                  <ownedParameter xmi:id="_ZPqeMXJsEeeZQN1ldLittQ" name="r" type="_ZMenUXJsEeeZQN1ldLittQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ZPv9wHJsEeeZQN1ldLittQ" name="setName" visibility="public">
+                  <ownedParameter xmi:id="_ZPv9wXJsEeeZQN1ldLittQ" name="name">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ZP02QHJsEeeZQN1ldLittQ" name="setSingle" visibility="public">
+                  <ownedParameter xmi:id="_ZP02QXJsEeeZQN1ldLittQ" name="single">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ZP5uwHJsEeeZQN1ldLittQ" name="setToolTip" visibility="public">
+                  <ownedParameter xmi:id="_ZP5uwXJsEeeZQN1ldLittQ" name="content">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ZQCRoHJsEeeZQN1ldLittQ" name="setBackgroundColor" visibility="public">
+                  <ownedParameter xmi:id="_ZQCRoXJsEeeZQN1ldLittQ" name="bg" type="_ZPbNonJsEeeZQN1ldLittQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ZQK0gHJsEeeZQN1ldLittQ" name="fillShape" visibility="protected">
+                  <ownedParameter xmi:id="_ZQK0gXJsEeeZQN1ldLittQ" name="graphics" type="_ZMeAQ3JsEeeZQN1ldLittQ"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_ZMaV5HJsEeeZQN1ldLittQ" name="LinkConnectionFigure" visibility="public">
+                <elementImport xmi:id="_ZQUlgXJsEeeZQN1ldLittQ" importedElement="_ZQUlgHJsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZQUlgnJsEeeZQN1ldLittQ" importedElement="_ZMeAQ3JsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZQUlg3JsEeeZQN1ldLittQ" importedElement="_ZNGSYnJsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZQVMkXJsEeeZQN1ldLittQ" importedElement="_ZQVMkHJsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZQVMknJsEeeZQN1ldLittQ" importedElement="_ZQT-cHJsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZQVMlHJsEeeZQN1ldLittQ" importedElement="_ZQVMk3JsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZQVzoHJsEeeZQN1ldLittQ" importedElement="_ZMenVHJsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZQVzonJsEeeZQN1ldLittQ" importedElement="_ZQVzoXJsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZQVzpHJsEeeZQN1ldLittQ" importedElement="_ZQVzo3JsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZQXo0HJsEeeZQN1ldLittQ" importedElement="_ZQXBwnJsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZQXo0XJsEeeZQN1ldLittQ" importedElement="_ZMfOYXJsEeeZQN1ldLittQ" visibility="private"/>
+                <generalization xmi:id="_ZQT-cXJsEeeZQN1ldLittQ" general="_ZQT-cHJsEeeZQN1ldLittQ"/>
+                <ownedAttribute xmi:id="_ZQasIHJsEeeZQN1ldLittQ" name="ROUTER_CURVY" visibility="private" isLeaf="true" isStatic="true" type="_ZQUlgHJsEeeZQN1ldLittQ">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZQbTMHJsEeeZQN1ldLittQ" name="" type="_ZQUlgHJsEeeZQN1ldLittQ" value="new CurvyConnectionRouter(),&#xA;&#x9;&#x9;&#x9;ROUTER_MANHATTAN = new ManhattanConnectionRouter()"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_ZQdvcHJsEeeZQN1ldLittQ" name="ROUTER_MANHATTAN" visibility="private" isLeaf="true" isStatic="true" type="_ZQUlgHJsEeeZQN1ldLittQ">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZQeWgHJsEeeZQN1ldLittQ" name="" type="_ZQUlgHJsEeeZQN1ldLittQ" value="new CurvyConnectionRouter(),&#xA;&#x9;&#x9;&#x9;ROUTER_MANHATTAN = new ManhattanConnectionRouter()"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_ZQhZ0HJsEeeZQN1ldLittQ" name="style" visibility="private" type="_ZQXBwnJsEeeZQN1ldLittQ">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZQhZ0XJsEeeZQN1ldLittQ" name="" type="_ZQXBwnJsEeeZQN1ldLittQ" value="Style.CURVY"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_ZQkdIHJsEeeZQN1ldLittQ" name="toolTip" visibility="private" type="_ZNGSYnJsEeeZQN1ldLittQ">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZQkdIXJsEeeZQN1ldLittQ" name="" type="_ZNGSYnJsEeeZQN1ldLittQ" value="null"/>
+                </ownedAttribute>
+                <ownedOperation xmi:id="_ZQmSUHJsEeeZQN1ldLittQ" name="LinkConnectionFigure" visibility="public"/>
+                <ownedOperation xmi:id="_ZQxRcHJsEeeZQN1ldLittQ" name="setStyle" visibility="public">
+                  <ownedParameter xmi:id="_ZQxRcXJsEeeZQN1ldLittQ" name="style" type="_ZQXBwnJsEeeZQN1ldLittQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ZQ8QkHJsEeeZQN1ldLittQ" name="outlineShape" visibility="protected">
+                  <ownedParameter xmi:id="_ZQ8QkXJsEeeZQN1ldLittQ" name="g" type="_ZMeAQ3JsEeeZQN1ldLittQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ZRFagHJsEeeZQN1ldLittQ" name="setToolTip" visibility="public">
+                  <ownedParameter xmi:id="_ZRFagXJsEeeZQN1ldLittQ" name="content">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_ZMaV5XJsEeeZQN1ldLittQ" name="NodeFigure" visibility="public">
+                <elementImport xmi:id="_ZRK6EHJsEeeZQN1ldLittQ" importedElement="_ZOD7sHJsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZRK6EXJsEeeZQN1ldLittQ" importedElement="_ZMeAQ3JsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZRK6EnJsEeeZQN1ldLittQ" importedElement="_ZNGSYnJsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZRK6E3JsEeeZQN1ldLittQ" importedElement="_ZOD7tHJsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZRK6FXJsEeeZQN1ldLittQ" importedElement="_ZRK6FHJsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZRLhIHJsEeeZQN1ldLittQ" importedElement="_ZMenUXJsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZRLhIXJsEeeZQN1ldLittQ" importedElement="_ZMenVHJsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZRLhI3JsEeeZQN1ldLittQ" importedElement="_ZRLhInJsEeeZQN1ldLittQ" visibility="private"/>
+                <generalization xmi:id="_ZRKTAHJsEeeZQN1ldLittQ" general="_ZMZu0XJsEeeZQN1ldLittQ"/>
+                <ownedAttribute xmi:id="_ZRN9Y3JsEeeZQN1ldLittQ" name="shape" visibility="private" type="_ZRN9YnJsEeeZQN1ldLittQ"/>
+                <ownedAttribute xmi:id="_ZRPLgHJsEeeZQN1ldLittQ" name="labelControl" visibility="private" type="_ZNGSYnJsEeeZQN1ldLittQ">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZRPLgXJsEeeZQN1ldLittQ" name="" type="_ZNGSYnJsEeeZQN1ldLittQ" value="new Label()"/>
+                </ownedAttribute>
+                <ownedOperation xmi:id="_ZRRnwHJsEeeZQN1ldLittQ" name="NodeFigure" visibility="public"/>
+                <ownedOperation xmi:id="_ZRWgQHJsEeeZQN1ldLittQ" name="setLabel" visibility="public">
+                  <ownedParameter xmi:id="_ZRWgQXJsEeeZQN1ldLittQ" name="text">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ZRd1AHJsEeeZQN1ldLittQ" name="setShape" visibility="public">
+                  <ownedParameter xmi:id="_ZRd1AXJsEeeZQN1ldLittQ" name="shape" type="_ZRN9YnJsEeeZQN1ldLittQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ZRhfYHJsEeeZQN1ldLittQ" name="getShape" visibility="public">
+                  <ownedParameter xmi:id="_ZRhfYXJsEeeZQN1ldLittQ" type="_ZRN9YnJsEeeZQN1ldLittQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ZRlJwHJsEeeZQN1ldLittQ" name="repositionLabel" visibility="public">
+                  <ownedParameter xmi:id="_ZRlJwXJsEeeZQN1ldLittQ" name="i">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ZRsegHJsEeeZQN1ldLittQ" name="fillShape" visibility="protected">
+                  <ownedParameter xmi:id="_ZRsegXJsEeeZQN1ldLittQ" name="graphics" type="_ZMeAQ3JsEeeZQN1ldLittQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ZR1BYHJsEeeZQN1ldLittQ" name="outlineShape" visibility="protected">
+                  <ownedParameter xmi:id="_ZR1BYXJsEeeZQN1ldLittQ" name="graphics" type="_ZMeAQ3JsEeeZQN1ldLittQ"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_ZMa88HJsEeeZQN1ldLittQ" name="SiteFigure" visibility="public">
+                <elementImport xmi:id="_ZR5S0XJsEeeZQN1ldLittQ" importedElement="_ZOD7sHJsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZR5S0nJsEeeZQN1ldLittQ" importedElement="_ZMeAQ3JsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZR5S03JsEeeZQN1ldLittQ" importedElement="_ZNGSYnJsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZR5S1HJsEeeZQN1ldLittQ" importedElement="_ZMenUXJsEeeZQN1ldLittQ" visibility="private"/>
+                <elementImport xmi:id="_ZR554HJsEeeZQN1ldLittQ" importedElement="_ZMenVHJsEeeZQN1ldLittQ" visibility="private"/>
+                <generalization xmi:id="_ZR5S0HJsEeeZQN1ldLittQ" general="_ZMZu0XJsEeeZQN1ldLittQ"/>
+                <ownedAttribute xmi:id="_ZR7IAHJsEeeZQN1ldLittQ" name="labelName" visibility="private" type="_ZNGSYnJsEeeZQN1ldLittQ">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZR7IAXJsEeeZQN1ldLittQ" name="" type="_ZNGSYnJsEeeZQN1ldLittQ" value="new Label()"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_ZR8WIHJsEeeZQN1ldLittQ" name="OUTLINE_DASH" isLeaf="true" isStatic="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZR8WIXJsEeeZQN1ldLittQ" value="*"/>
+                </ownedAttribute>
+                <ownedOperation xmi:id="_ZSAnkHJsEeeZQN1ldLittQ" name="SiteFigure" visibility="public"/>
+                <ownedOperation xmi:id="_ZSGuMHJsEeeZQN1ldLittQ" name="setName" visibility="public">
+                  <ownedParameter xmi:id="_ZSGuMXJsEeeZQN1ldLittQ" name="name">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_ZSGuMnJsEeeZQN1ldLittQ" name="alias">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ZSOC8HJsEeeZQN1ldLittQ" name="fillShape" visibility="protected">
+                  <ownedParameter xmi:id="_ZSOC8XJsEeeZQN1ldLittQ" name="graphics" type="_ZMeAQ3JsEeeZQN1ldLittQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ZSVXsHJsEeeZQN1ldLittQ" name="outlineShape" visibility="protected">
+                  <ownedParameter xmi:id="_ZSVXsXJsEeeZQN1ldLittQ" name="graphics" type="_ZMeAQ3JsEeeZQN1ldLittQ"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Usage" xmi:id="_ZSehoHJsEeeZQN1ldLittQ" name="figures_draw2d" client="_ZMZH0HJsEeeZQN1ldLittQ" supplier="_ZMeAQnJsEeeZQN1ldLittQ"/>
+              <packagedElement xmi:type="uml:Usage" xmi:id="_ZSehoXJsEeeZQN1ldLittQ" name="figures_geometry" client="_ZMZH0HJsEeeZQN1ldLittQ" supplier="_ZMenUHJsEeeZQN1ldLittQ"/>
+              <packagedElement xmi:type="uml:Usage" xmi:id="_ZSehonJsEeeZQN1ldLittQ" name="figures_swt" client="_ZMZH0HJsEeeZQN1ldLittQ" supplier="_ZMenU3JsEeeZQN1ldLittQ"/>
+              <packagedElement xmi:type="uml:Usage" xmi:id="_ZSeho3JsEeeZQN1ldLittQ" name="figures_ui" client="_ZMZH0HJsEeeZQN1ldLittQ" supplier="_ZMfOYHJsEeeZQN1ldLittQ"/>
+              <packagedElement xmi:type="uml:Usage" xmi:id="_ZSfIsHJsEeeZQN1ldLittQ" name="figures_assistants" client="_ZMZH0HJsEeeZQN1ldLittQ" supplier="_ZNHggnJsEeeZQN1ldLittQ"/>
+              <packagedElement xmi:type="uml:Usage" xmi:id="_ZSfIsXJsEeeZQN1ldLittQ" name="figures_graphics" client="_ZMZH0HJsEeeZQN1ldLittQ" supplier="_ZOEiwnJsEeeZQN1ldLittQ"/>
+              <packagedElement xmi:type="uml:Usage" xmi:id="_ZSfIsnJsEeeZQN1ldLittQ" name="figures_LinkStyleUtilities" client="_ZMZH0HJsEeeZQN1ldLittQ" supplier="_ZQXBwXJsEeeZQN1ldLittQ"/>
+              <packagedElement xmi:type="uml:Usage" xmi:id="_ZSfIs3JsEeeZQN1ldLittQ" name="figures_model" client="_ZMZH0HJsEeeZQN1ldLittQ" supplier="_ZQXBwHJsEeeZQN1ldLittQ"/>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_ZMenVnJsEeeZQN1ldLittQ" name="utilities">
+          <packagedElement xmi:type="uml:Package" xmi:id="_ZMfOYHJsEeeZQN1ldLittQ" name="ui">
+            <packagedElement xmi:type="uml:DataType" xmi:id="_ZMfOYXJsEeeZQN1ldLittQ" name="UI"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_ZQXBwHJsEeeZQN1ldLittQ" name="model">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_ZRLhInJsEeeZQN1ldLittQ" name="Ellipse"/>
+          <packagedElement xmi:type="uml:Package" xmi:id="_ZQXBwXJsEeeZQN1ldLittQ" name="LinkStyleUtilities">
+            <packagedElement xmi:type="uml:DataType" xmi:id="_ZQXBwnJsEeeZQN1ldLittQ" name="Style"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_ZMeAQHJsEeeZQN1ldLittQ" name="org">
+    <packagedElement xmi:type="uml:Package" xmi:id="_ZMeAQXJsEeeZQN1ldLittQ" name="eclipse">
+      <packagedElement xmi:type="uml:Package" xmi:id="_ZMeAQnJsEeeZQN1ldLittQ" name="draw2d">
+        <packagedElement xmi:type="uml:Package" xmi:id="_ZMenUHJsEeeZQN1ldLittQ" name="geometry">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_ZMenUXJsEeeZQN1ldLittQ" name="Rectangle"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_ZOD7tHJsEeeZQN1ldLittQ" name="Dimension"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_ZQVMk3JsEeeZQN1ldLittQ" name="Point"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_ZRK6FHJsEeeZQN1ldLittQ" name="PointList"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_ZMeAQ3JsEeeZQN1ldLittQ" name="Graphics"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_ZNFrUHJsEeeZQN1ldLittQ" name="Shape"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_ZNGSYHJsEeeZQN1ldLittQ" name="IFigure"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_ZNGSYnJsEeeZQN1ldLittQ" name="Label"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_ZNGSZHJsEeeZQN1ldLittQ" name="LayoutManager"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_ZNG5cHJsEeeZQN1ldLittQ" name="MarginBorder"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_ZNG5c3JsEeeZQN1ldLittQ" name="XYLayout"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_ZOD7sHJsEeeZQN1ldLittQ" name="ColorConstants"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_ZQT-cHJsEeeZQN1ldLittQ" name="PolylineConnection"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_ZQUlgHJsEeeZQN1ldLittQ" name="ConnectionRouter"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_ZQVMkHJsEeeZQN1ldLittQ" name="ManhattanConnectionRouter"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_ZMenU3JsEeeZQN1ldLittQ" name="swt">
+        <packagedElement xmi:type="uml:Package" xmi:id="_ZOEiwnJsEeeZQN1ldLittQ" name="graphics">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_ZOEiw3JsEeeZQN1ldLittQ" name="Font"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_ZPbNonJsEeeZQN1ldLittQ" name="Color"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_ZQVzoXJsEeeZQN1ldLittQ" name="Path"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_ZMenVHJsEeeZQN1ldLittQ" name="SWT"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_ZRN9YHJsEeeZQN1ldLittQ" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_ZRN9YXJsEeeZQN1ldLittQ" name="lang">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_ZRN9YnJsEeeZQN1ldLittQ" name="Object"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

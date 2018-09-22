@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xmi:id="_9yUQ0DsLEeezz7imRslVYw" version="10.1.0.201509162000">
+  <semanticResources>resources/schema/change-br.xsd</semanticResources>
+  <semanticResources>bundleentry://528.fwk1303122461/cache/www.w3.org/2001/XMLSchema-instance.xsd</semanticResources>
+  <semanticResources>bundleentry://528.fwk1303122461/cache/www.w3.org/2001/XMLSchema.xsd</semanticResources>
+  <semanticResources>resources/schema/change.xsd</semanticResources>
+  <semanticResources>bundleentry://528.fwk1303122461/cache/www.w3.org/2001/MagicXMLSchema.xsd</semanticResources>
+  <semanticResources>http://www.w3.org/2001/xml.xsd</semanticResources>
+  <semanticResources>my.uml</semanticResources>
+</viewpoint:DAnalysis>
